@@ -1,0 +1,111 @@
+header{
+  background-color: #201F20;
+  color: #FFFEFF;
+  padding: 25px;
+}
+
+.fixed{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  font-size: 20px;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.menu li{
+  cursor: pointer;
+}
+
+.menu li:hover{
+  color: rgb(211, 211, 211);
+}
+
+.main-product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.main-info h1{
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.main-info p{
+  font-weight: 300;
+}
+
+.main-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.main-buttons button{
+  font-size: 15px;
+  color: #FFFEFF;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.main-buttons button:active{
+  transform: scale(0.96);
+}
+
+.read-more-button{
+  background: transparent;
+  border: 1px solid #FFFEFF;
+
+}
+
+.main-card-button{
+  background-color: rgb(60, 26, 185);
+  border: none;
+}
+
+.main-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-product-image{
+  width: max-content;
+}
+
+.products{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.product-container{
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
