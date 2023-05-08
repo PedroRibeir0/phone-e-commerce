@@ -1,62 +1,52 @@
-header{
+header {
   background-color: #201F20;
   color: #FFFEFF;
   padding: 25px;
 }
-
-.fixed{
+header .fixed {
   display: flex;
   justify-content: space-between;
 }
-
-.logo{
+header .fixed .logo {
   font-size: 20px;
 }
-
-.menu{
+header .fixed .menu {
   display: flex;
   list-style: none;
   width: 40%;
   justify-content: space-between;
 }
-
-.menu li{
+header .fixed .menu .menu-opt {
   cursor: pointer;
 }
-
-.menu li:hover{
+header .fixed .menu .menu-opt:hover {
   color: rgb(211, 211, 211);
 }
 
-.main-product{
+.main-product {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.main-info{
+.main-product .main-info {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 300px;
 }
-
-.main-info h1{
+.main-product .main-info h1 {
   font-size: 55px;
   font-weight: 400;
 }
-
-.main-info p{
+.main-product .main-info p {
   font-weight: 300;
 }
-
-.main-buttons{
+.main-product .main-info .main-buttons {
   display: flex;
   justify-content: space-between;
   width: 75%;
 }
-
-.main-buttons button{
+.main-product .main-info .main-buttons button {
   font-size: 15px;
   color: #FFFEFF;
   padding: 10px 25px;
@@ -64,41 +54,35 @@ header{
   cursor: pointer;
   transition: all 0.1s;
 }
-
-.main-buttons button:active{
+.main-product .main-info .main-buttons button:active {
   transform: scale(0.96);
 }
-
-.read-more-button{
+.main-product .main-info .main-buttons .read-more-button {
   background: transparent;
   border: 1px solid #FFFEFF;
-
 }
-
-.main-card-button{
+.main-product .main-info .main-buttons .main-card-button {
   background-color: rgb(60, 26, 185);
   border: none;
 }
-
-.main-image-container{
+.main-product .main-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.main-product-image{
+.main-product .main-image-container .main-product-image {
+  width: -moz-max-content;
   width: max-content;
 }
 
-.products{
+.products {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
-
-.product-container{
-  padding: 10px;
+.products .product-container {
+  padding: 20px 10px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   background-color: rgb(255, 255, 255);
@@ -108,4 +92,111 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
+.products .product-container .product-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+.products .product-container .product-buttons .button {
+  font-size: 22px;
+  cursor: pointer;
+}
+.products .product-container .product-buttons .cart-button {
+  color: rgb(60, 26, 185);
+}
+
+.filter {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.filter h4 {
+  margin-top: 25px;
+  border-top: 1px solid rgb(126, 126, 126);
+  padding-top: 25px;
+  margin-bottom: 5px;
+}
+.filter .price-filter {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+}
+.filter .price-filter .price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.filter .price-filter .price-container .min-max-span {
+  color: rgb(160, 160, 160);
+  font-weight: 300;
+  font-size: 15px;
+}
+.filter .price-filter .price-container .price {
+  font-size: 16px;
+}
+.filter .range-container {
+  margin-top: 20px;
+  width: 160px;
+  height: 3px;
+  background-color: rgb(175, 175, 175);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.filter .range-container .progress {
+  position: absolute;
+  height: 3px;
+  left: 25%;
+  right: 25%;
+  background: #005CC8;
+  border-radius: 5px;
+}
+.filter .range-container input[type=range] {
+  width: 100%;
+  position: absolute;
+  background: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  pointer-events: none;
+}
+.filter .range-container input[type=range]::-webkit-slider-thumb {
+  cursor: pointer;
+  width: 8px;
+  height: 14px;
+  border-radius: 10px;
+  -webkit-appearance: none;
+          appearance: none;
+  pointer-events: auto;
+  background-color: #005CC8;
+}
+.filter .range-container input[type=range]::-moz-range-thumb {
+  width: 10px;
+  height: 16px;
+  border-radius: 10px;
+  -moz-appearance: none;
+       appearance: none;
+  pointer-events: auto;
+  background-color: #005CC8;
+}
+
+.brand-filter {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  gap: 5px;
+}
+.brand-filter .brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.brand-filter .brand input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+}/*# sourceMappingURL=App.css.map */

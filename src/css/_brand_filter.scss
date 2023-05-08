@@ -1,0 +1,17 @@
+.brand-filter{
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    gap: 5px;
+
+    .brand{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        input[type='checkbox']{
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

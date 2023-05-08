@@ -1,0 +1,90 @@
+
+header{
+    background-color: #201F20;
+    color: #FFFEFF;
+    padding: 25px;
+
+    .fixed{
+        display: flex;
+        justify-content: space-between;
+
+        .logo{
+            font-size: 20px;
+          }
+          
+          .menu{
+            display: flex;
+            list-style: none;
+            width: 40%;
+            justify-content: space-between;
+
+            .menu-opt{
+                cursor: pointer;
+              }
+              
+            .menu-opt:hover{
+                color: rgb(211, 211, 211);
+              }
+          }
+      }
+  }
+  
+  .main-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+
+        h1{
+            font-size: 55px;
+            font-weight: 400;
+          }
+          
+        p{
+            font-weight: 300;
+          }
+        
+        .main-buttons{
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+
+        button{
+            font-size: 15px;
+            color: #FFFEFF;
+            padding: 10px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.1s;
+
+            &:active{
+                transform: scale(0.96);
+          }
+        }
+        .read-more-button{
+            background: transparent;
+            border: 1px solid #FFFEFF;
+        }
+          
+        .main-card-button{
+            background-color: rgb(60, 26, 185);
+            border: none;
+        }
+      }    
+  }
+
+  .main-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-product-image{
+        width: max-content;
+      }
+  }
+}
